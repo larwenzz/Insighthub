@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Environment as a Literary Theme | InsightHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    /* Environment Article 1 — scoped to this article */
+    .environment1-article {
+      width: 100%;
+      background: var(--cream, #f7f5ee);
+      color: #111;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .environment1-page {
+      width: min(900px, 100%);
+      margin: 0 auto;
+      padding: 28px 40px 70px;
+      overflow: hidden;
+    }
+
+    .environment1-page p,
+    .environment1-page li {
+      color: #111;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.48;
+    }
+
+    /* Source/reference header */
+    .environment1-source {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .environment1-source-logo {
+      width: 180px;
+      height: 120px;
+      flex: 0 0 180px;
+      object-fit: contain;
+    }
+
+    .environment1-source-text {
+      flex: 1;
+    }
+
+    .environment1-source-text h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 20px;
+      line-height: 1.15;
+      margin: 0 0 12px;
+      color: #111;
+    }
+
+    .environment1-source-text p {
+      margin: 0 0 10px;
+    }
+
+    .environment1-source-text a {
+      color: #06e;
+      text-decoration: underline;
+    }
+
+    /* Large banner */
+    .environment1-banner {
+      width: 100%;
+      height: 185px;
+      margin: 28px 0 45px;
+      overflow: hidden;
+    }
+
+    .environment1-banner video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .environment1-page h1 {
+      font-family: "Brush Script MT", "Segoe Script", cursive;
+      font-size: 28px;
+      line-height: 1.1;
+      margin: 0 0 25px;
+      color: #111;
+      font-weight: 700;
+    }
+
+    .environment1-page h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 24px;
+      line-height: 1.15;
+      margin: 0 0 25px;
+      color: #111;
+      font-weight: 800;
+    }
+
+    .environment1-page .lead {
+      margin-bottom: 20px;
+    }
+
+    .environment1-page strong {
+      font-weight: 800;
+    }
+
+    .environment1-script {
+      font-family: "Brush Script MT", "Segoe Script", cursive;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* Right-side windmill */
+    .environment1-right {
+      float: right;
+      width: 300px;
+      height: 215px;
+      margin: 0 0 18px 24px;
+      overflow: hidden;
+    }
+
+    .environment1-right video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* Left-side farmer */
+    .environment1-left {
+      float: left;
+      width: 270px;
+      height: 205px;
+      margin: 4px 22px 14px 0;
+      overflow: hidden;
+    }
+
+    .environment1-left video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .environment1-clear::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Wide windy/environment video */
+    .environment1-wide {
+      width: 100%;
+      height: 215px;
+      margin: 25px 0 18px;
+      overflow: hidden;
+    }
+
+    .environment1-wide video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    /* Aldo Leopold quote */
+    .environment1-quote {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin: 42px 0 35px;
+    }
+
+    .environment1-quote img {
+      width: 170px;
+      height: 165px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .environment1-quote-text {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.45;
+      color: #111;
+    }
+
+    .environment1-quote-text a {
+      color: #06e;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    /* Bottom decorative video */
+    .environment1-bottom {
+      width: 90%;
+      height: 150px;
+      margin: 30px auto 0;
+      overflow: hidden;
+    }
+
+    .environment1-bottom video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    @media (max-width: 700px) {
+      .environment1-page {
+        padding: 25px 20px 50px;
+      }
+
+      .environment1-source {
+        flex-direction: column;
+      }
+
+      .environment1-source-logo {
+        width: 150px;
+        height: 100px;
+      }
+
+      .environment1-banner {
+        height: 155px;
+        margin-bottom: 32px;
+      }
+
+      .environment1-right,
+      .environment1-left {
+        float: none;
+        width: 100%;
+        height: 210px;
+        margin: 15px 0 20px;
+      }
+
+      .environment1-wide {
+        height: 190px;
+      }
+
+      .environment1-quote {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .environment1-quote img {
+        width: 170px;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="logo" href="../index.html">
+        <span class="logo-mark">I</span>
+        <span>Insight<span>Hub</span></span>
+      </a>
+      <a class="btn primary" href="../index.html">← Home</a>
+    </nav>
+  </header>
+
+  <main class="environment1-article">
+    <article class="environment1-page">
+
+      <section class="environment1-source">
+        <img class="environment1-source-logo"
+             src="../static/environment1-ebsco lves books.jpeg"
+             alt="EBSCO eBooks logo">
+
+        <div class="environment1-source-text">
+          <h2>The Environment as a Literary Theme</h2>
+          <p>
+            The article explains how literature has explored the relationship between humans and nature.
+            Writers have used the environment to show how nature affects people, how people affect nature,
+            and how society changes its relationship with the natural world.
+          </p>
+          <p>
+            Main idea: The environment in literature isn’t simply a background or setting. It can influence
+            characters, shape their identities, reflect society’s problems, and represent humanity’s
+            relationship with the natural world.
+          </p>
+          <p>
+            <strong>Haight, R. (2023). <i>The environment as literary theme.</i> EBSCO Research Starters.</strong><br>
+            <a href="https://www.ebsco.com/research-starters/literature-and-writing/environment-literary-theme" target="_blank" rel="noopener">
+              https://www.ebsco.com/research-starters/literature-and-writing/environment-literary-theme
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <div class="environment1-banner">
+        <video autoplay muted loop playsinline>
+          <source src="../movie/environment1- ganges river.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <h1>Renewable energy through the benefit of innovation</h1>
+
+      <section class="environment1-clear">
+        <div class="environment1-right">
+          <video autoplay muted loop playsinline>
+            <source src="../movie/environment1-windd mill.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <p class="lead">
+          Innovation has been a profound structure that our environment has developed. It allows our system
+          to be more accessible, better structured and also a way to enhance our country’s benefits.
+          Renewable resources take use of used trash that we find on the streets, inside the malls, or even
+          the wastes we dispose of at home. Not only that it may cause greenhouse gasses, as we reuse them to
+          reduce these gasses that bring toxicity to our environment, our health, and to more structures that are built.
+        </p>
+
+        <p>
+          All of us have a way of disposal, and we do it every time we finish a food, a drink, or even after
+          we are done using something. The government has a way to separate which materials can be made to
+          take benefit of these innovations through separating what's to be reduced, what can be reused,
+          and what can be recycled. Through this, the manufacturers will have an easy way of identifying what
+          materials can be made using this kind of waste. It can be through making fuel for powerplants,
+          materials that are used for agriculture as they are mostly accommodated through their fertilizing potential.
+        </p>
+      </section>
+
+      <section class="environment1-clear">
+        <div class="environment1-left">
+          <video autoplay muted loop playsinline>
+            <source src="../movie/environment1- farmers.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <p>
+          Speaking of, this can be a whole change to farmers. It promotes a whole new opportunity for farmers
+          to utilize these, and to enhance our agricultural reforms so that our natural resources may be innovated
+          using these waste. Not everything is harmful, but when not taken advantage of, it may result in negative
+          impacts, mainly industrial pollution, the collection of greenhouse gasses on our atmosphere which can
+          then conclude to the impacts of our health.
+        </p>
+
+        <p>
+          Our atmosphere cannot hold as much pollution as we expect it to be. In regards to the use of petrol,
+          we can then also reduce the use of transportation and rely on what our body can do for us and also for
+          the environment. These factors are the effects of climate change, whether it may be predictable or not.
+          Considering the manufacturing of these used materials to provide a benefit for our environment, these can
+          also be a factor of climate change. Us humans are capable of preventing climate change, yet all we do is
+          to build something that will not prevent it, but rather structures that will protect us from it. From typhoon
+          after typhoons, flood after flood, or even earthquakes. We just build strong foundations, shelters, better
+          floor plans for our homes and hope that it will stand out these natural disasters.
+        </p>
+      </section>
+
+      <div class="environment1-wide">
+        <video autoplay muted loop playsinline>
+          <source src="../movie/environment1- windy.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <p>
+        Moreover, we must also be thankful for these waste materials. Used plastics can be turned into oil,
+        that will later then be used to power up power plants, and I hope that this method will later be used for
+        cars and to possibly lessen the amount of gas nowadays. As a student, it is better to learn these early,
+        rather than realizing it on your own eventually. The both can end up the same idea unfortunately, but upon
+        knowing this, it’s better if we use it more on agriculture as our county is rich on those resources. The trees
+        are better than the walls built, and the soil is richer than any cement has laid. These are going to be always
+        the strongest foundations we have, and we must not take advantage of them.
+      </p>
+
+      <div class="environment1-quote">
+        <img src="../static/environment1 aldo leopold.jpeg" alt="Aldo Leopold">
+        <div class="environment1-quote-text">
+          “Like winds and sunsets, wild things were taken for granted until progress began to do away with them.”
+          <br><br>
+          — <a href="https://www.aldoleopold.org/about/aldo-leopold">Aldo Leopold</a>
+        </div>
+      </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.classList.add("loaded");
+    });
+  </script>
+</body>
+</html>

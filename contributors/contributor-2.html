@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contributor Name | InsightHub</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.bio { max-width:780px; margin:0 auto; padding:100px 0; }
+.bio h1 { font-size:4rem; margin:20px 0; }
+.bio p { margin:18px 0; font-size:1.05rem; }
+</style>
+</head>
+<body class="page">
+<header class="site-header"><nav class="navbar container">
+<a class="logo" href="../index.html"><span class="logo-mark">I</span><span>Insight<span>Hub</span></span></a>
+<a href="../index.html">← Home</a>
+</nav></header>
+<main class="bio container">
+<p class="section-label">THE CONTRIBUTORS</p>
+<h1>Prince Matthew C. Bugarin</h1>
+<p><strong>Role:</strong> Writer • Researcher</p>
+<p>One of his goals is to become an engineer in the future. His interest in civil engineering comes from seeing how construction and engineering can turn ideas into actual buildings and structures. He hopes to learn more about designing and building structures that are safe, useful, and beneficial to people. He also wants to make his family proud and contribute something meaningful to his community in the future. Aside from going to school, Matthew enjoys playing video games, watching anime, and doing things that he finds interesting. This allows him to unwind and have a breather from the pressures of school. Matthew also loves being around his loved ones, whom he considers as motivators.</p>
+<p>One of his goals is to become an engineer in the future. His interest in civil engineering comes from seeing how construction and engineering can turn ideas into actual buildings and structures. He hopes to learn more about designing and building structures that are safe, useful, and beneficial to people. He also wants to make his family proud and contribute something meaningful to his community in the future. Aside from going to school, Matthew enjoys playing video games, watching anime, and doing things that he finds interesting. This allows him to unwind and have a breather from the pressures of school. Matthew also loves being around his loved ones, whom he considers as motivators.</p>
+<p>Being a student is never easy, but for Prince, it has been even harder due to some challenges he has faced when handling his studies and other responsibilities. However, all these experiences have taught him to be responsible and understand the value of perseverance.</p>
+<P>As Prince approaches graduation from high school, he strives to become more confident, diligent, and focused. He realizes that it will take time and effort to achieve his dreams. With the knowledge he gains every day, his persistence and the help from those around him, he believes he can succeed and have a brighter future.</P>
+</main>
+
+<script src="../script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        const url = this.href;
+
+        // Only animate links to another page
+        if (url && !url.includes("#") && url.startsWith(window.location.origin)) {
+            e.preventDefault();
+
+            document.body.classList.remove("loaded");
+
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500);
+        }
+    });
+});
+</script>
+</body>
+</html>

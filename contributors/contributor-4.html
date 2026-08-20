@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contributor Name | InsightHub</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.bio { max-width:780px; margin:0 auto; padding:100px 0; }
+.bio h1 { font-size:4rem; margin:20px 0; }
+.bio p { margin:18px 0; font-size:1.05rem; }
+</style>
+</head>
+<body class="page">
+<header class="site-header"><nav class="navbar container">
+<a class="logo" href="../index.html"><span class="logo-mark">I</span><span>Insight<span>Hub</span></span></a>
+<a href="../index.html">← Home</a>
+</nav></header>
+<main class="bio container">
+<p class="section-label">THE CONTRIBUTORS</p>
+<h1>Raf Matthew J. Landingin</h1>
+<p><strong>Role:</strong> Writer • Researcher</p>
+<p>Raf Matthew J. Landingin is a Grade 12 STEM student from Kingfisher, School of Business and Finance. He may have a potential in relation to those skills. He loves to write, to cook, or any household things he can do. He may seem careless when it comes to pressure and panic, but knows how to cope with it with proper focus and keeping it organized. He does not want a messy working space as he gets irritated sometimes through being overstimulated, yet knows how to control himself in all kinds of scenarios.</p> 
+<p>He can contribute fairly when it comes to group tasks, and get things done before the deadline. He is trusted for his works and his output, as he can apply his skills he learned, it may be a hobby, or something for fun which may be useful for the later work. He competed in various competitions during junior high school, and was once a student leader. He helped teachers and the students to form unity, hard work and trust in one another.</p>
+<p>When it comes to being an enthusiast, he likes to solve puzzles such as rubiks cubes, drawing architectural structures, and even be creative about the things he randomly finds that surrounds him. He also loves photography, making him photograph whatever he finds appealing. Even if something is off the frame or there is nothing to be photographed, he will find a way to make it eye catchy. He makes sure to edit the photo, a little sprinkle of color grading and all set.</p>
+<p> He loves filming and making short reels that he finds entertaining. He matches the colors and the tone of the frame to be in relation to what he wants the vibe to be, either fun or moody. He is filled with light in his eyes, filling it with music which he can play. He can do whatever he wishes to do, what he wants to do, and of course, how it also affects his needs all the way. </p>
+</main>
+
+<script src="../script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        const url = this.href;
+
+        // Only animate links to another page
+        if (url && !url.includes("#") && url.startsWith(window.location.origin)) {
+            e.preventDefault();
+
+            document.body.classList.remove("loaded");
+
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500);
+        }
+    });
+});
+</script>
+</body>
+</html>

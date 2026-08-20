@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contributor Name | InsightHub</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.bio { max-width:780px; margin:0 auto; padding:100px 0; }
+.bio h1 { font-size:4rem; margin:20px 0; }
+.bio p { margin:18px 0; font-size:1.05rem; }
+</style>
+</head>
+<body class="page">
+<header class="site-header"><nav class="navbar container">
+<a class="logo" href="../index.html"><span class="logo-mark">I</span><span>Insight<span>Hub</span></span></a>
+<a href="../index.html">← Home</a>
+</nav></header>
+<main class="bio container">
+<p class="section-label">THE CONTRIBUTORS</p>
+<h1>Gabriel Angelo B. Biala</h1>
+<p><strong>Role:</strong> Writer • Researcher</p>
+<p>Gabriel Angelo B. Biala is a senior high school student who is currently learning more about personal interests, goals, and dreams for the future. As a student, Gab encounters different lessons and challenges that encourage careful thinking, creativity, and perseverance. These experiences have helped Gab become more curious, responsible, and motivated to improve.</p>>
+<p>One of Gab’s interests is exploring different places. Visiting new locations allows Gab to discover beautiful sights, learn about different cultures, and experience unfamiliar environments. Exploring also helps Gab appreciate the diversity of the Philippines and gain new experiences that can contribute to personal growth. He hopes to visit more places in the future and create meaningful memories with loved ones.</p>
+<p>Aside from exploring, Gab enjoys playing video games during free time. Gaming serves as a way for him to relax and take a break from schoolwork and other responsibilities. It also helps develop creativity, patience, strategic thinking, and problem-solving skills. Being a student is not always easy because he faces various challenges in managing studies, responsibilities, and personal goals. However, these experiences have taught Gab the importance of hard work, discipline, and perseverance. Every difficulty becomes an opportunity to learn, grow, and become stronger.</p>
+<p>As Gab continues through senior high school, he strives to become more confident, diligent, and focused. He understands that achieving future goals requires time, effort, and determination. With the knowledge gained from school, the support of loved ones, and a willingness to keep learning, He believes that a brighter and more successful future is possible.</p>
+</main>
+
+<script src="../script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        const url = this.href;
+
+        // Only animate links to another page
+        if (url && !url.includes("#") && url.startsWith(window.location.origin)) {
+            e.preventDefault();
+
+            document.body.classList.remove("loaded");
+
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500);
+        }
+    });
+});
+</script>
+</body>
+</html>

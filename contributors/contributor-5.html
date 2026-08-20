@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contributor Name | InsightHub</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.bio { max-width:780px; margin:0 auto; padding:100px 0; }
+.bio h1 { font-size:4rem; margin:20px 0; }
+.bio p { margin:18px 0; font-size:1.05rem; }
+</style>
+</head>
+<body class="page">
+<header class="site-header"><nav class="navbar container">
+<a class="logo" href="../index.html"><span class="logo-mark">I</span><span>Insight<span>Hub</span></span></a>
+<a href="../index.html">← Home</a>
+</nav></header>
+<main class="bio container">
+<p class="section-label">THE CONTRIBUTORS</p>
+<h1>Lawrence C. Peralta</h1>
+<p><strong>Role:</strong> Writer • Researcher</p>
+<p>Lawrence C. Peralta is a Grade 12 STEM student who is currently learning more about himself, his interests, and the person he wants to become in the future. Being a senior high school student has given him many experiences that have challenged him to improve, become more responsible, and understand his strengths and weaknesses. He considers himself an open-minded person who is willing to try new things and learn from different experiences.</p>
+<p>One of the things he enjoys most is exploring different interests during his free time. He likes discovering new topics, listening to music, watching shows or videos, and spending time on activities that allow him to relax and express himself. He also enjoys learning about things that catch his curiosity because he believes that learning does not only happen inside the classroom. His interests have helped him discover different sides of his personality and encouraged him to become more curious about the world around him.</p>
+<p>As a student, he has experienced challenges that have taught him the importance of patience, responsibility, and perseverance. There are times when schoolwork and other responsibilities can become stressful, but these experiences have helped him learn how to manage his time and stay focused on what needs to be done. He has learned that making mistakes and facing difficulties are normal parts of growing, as long as he uses them as opportunities to improve.</p>
+<p>His experiences in school and his relationships with the people around him have also influenced the way he sees himself. He values the people who support and motivate him because they remind him to keep working toward his goals even when things become difficult. Through his experiences, he has learned that personal growth takes time and that everyone has their own journey.</p>
+</main>
+
+<script src="../script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        const url = this.href;
+
+        // Only animate links to another page
+        if (url && !url.includes("#") && url.startsWith(window.location.origin)) {
+            e.preventDefault();
+
+            document.body.classList.remove("loaded");
+
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500);
+        }
+    });
+});
+</script>
+</body>
+</html>

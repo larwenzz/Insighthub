@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>InsightHub | Literature as a Reflection of Mental Health</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: #f8f7f1;
+        color: #17231e;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .health3-page {
+        width: min(1100px, 92%);
+        margin: 0 auto;
+        padding: 55px 0 80px;
+    }
+
+    .health3-page h1 {
+        margin: 0 0 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(30px, 4vw, 48px);
+        font-weight: 500;
+        letter-spacing: -1px;
+    }
+
+    .health3-page h2 {
+        margin: 0 0 18px;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 30px;
+        color: #17231e;
+    }
+
+    .health3-page p {
+        margin: 0 0 22px;
+        font-size: 17px;
+        line-height: 1.65;
+    }
+
+    .health3-video {
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Opening section */
+    .health3-opening {
+        display: grid;
+        grid-template-columns: 42% 58%;
+        align-items: start;
+        margin-bottom: 22px;
+    }
+
+    .health3-opening .health3-media {
+        padding-right: 18px;
+    }
+
+    .health3-opening .health3-media video {
+        width: 100%;
+        height: 285px;
+        object-fit: cover;
+    }
+
+    .health3-opening .health3-text {
+        padding-left: 0;
+    }
+
+    .health3-opening + p {
+        margin-top: 0;
+    }
+
+    /* Right-side image/video inside a paragraph section */
+    .health3-side {
+        display: grid;
+        grid-template-columns: 1fr 42%;
+        gap: 28px;
+        align-items: start;
+        margin: 28px 0;
+    }
+
+    .health3-side.reverse {
+        grid-template-columns: 42% 1fr;
+    }
+
+    .health3-side video {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    /* Wide footsteps video */
+    .health3-banner {
+        width: 100%;
+        margin: 55px 0 12px;
+    }
+
+    .health3-banner video {
+        width: 100%;
+        height: 185px;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Text beside confusion video */
+    .health3-confusion {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 18px;
+        align-items: center;
+        margin: 25px 0 45px;
+    }
+
+    .health3-confusion video {
+        width: 100%;
+        height: 255px;
+        object-fit: cover;
+    }
+
+    /* Health section */
+    .health3-health-card {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        gap: 28px;
+        align-items: start;
+        margin: 55px 0 55px;
+    }
+
+    .health3-health-card video {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .health3-health-card h2 {
+        font-style: italic;
+        margin-top: 0;
+    }
+
+    /* Literature education section */
+    .health3-literature-card {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        gap: 28px;
+        align-items: start;
+        margin-top: 35px;
+    }
+
+    .health3-literature-card img {
+        width: 100%;
+        height: 260px;
+        object-fit: contain;
+        background: #eee;
+    }
+
+    .health3-literature-card h2 {
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 25px;
+        font-style: italic;
+        margin-top: 0;
+    }
+
+    .health3-citation {
+        margin-top: 22px;
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .health3-citation a {
+        color: #155dcc;
+    }
+
+    @media (max-width: 750px) {
+        .health3-page {
+            width: 92%;
+            padding-top: 35px;
+        }
+
+        .health3-opening,
+        .health3-side,
+        .health3-side.reverse,
+        .health3-confusion,
+        .health3-health-card,
+        .health3-literature-card {
+            display: block;
+        }
+
+        .health3-opening .health3-media {
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .health3-opening .health3-media video,
+        .health3-side video,
+        .health3-confusion video,
+        .health3-health-card video {
+            height: auto;
+            max-height: 350px;
+        }
+
+        .health3-side video,
+        .health3-confusion video {
+            margin-bottom: 20px;
+        }
+
+        .health3-health-card img,
+        .health3-literature-card img {
+            margin-bottom: 20px;
+        }
+
+        .health3-banner video {
+            height: auto;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header class="site-header"><nav class="navbar container">
+<a class="logo" href="../index.html"><span class="logo-mark">I</span><span>Insight<span>Hub</span></span></a>
+<a class="btn primary" href="../index.html">← Home</a>
+</nav></header>
+
+<main class="health3-page">
+
+    <h1>Literature as a Reflection of Mental Health</h1>
+
+    <!-- Opening: can't-sleep video + introductory text -->
+    <section class="health3-opening">
+        <div class="health3-media">
+            <video class="health3-video" autoplay muted loop playsinline>
+                <source src="../movie/health3 - cant sleep.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="health3-text">
+            <p>
+                Literature has always explored the complicated nature of human emotions.
+                Long before mental health became a common subject of public discussion,
+                writers were already creating characters who experienced grief, fear,
+                loneliness, confusion, guilt, and emotional conflict. These characters
+                demonstrate that mental health is not a modern concern but a lasting part
+                of human existence. Literature allows readers to examine these experiences
+                from different perspectives and understand emotions that may otherwise
+                remain difficult to discuss.
+            </p>
+        </div>
+    </section>
+
+    <p>
+        Characters are one of the most effective ways literature presents mental health.
+        A character's thoughts and actions can reveal struggles that are not immediately
+        visible to other people. Someone may appear calm on the outside while experiencing
+        intense emotional conflict internally. Through narration, dialogue, symbolism,
+        and characterization, writers can reveal this hidden side of human experience.
+        Readers are therefore encouraged to look beyond appearances and understand that
+        people may be carrying struggles that cannot easily be seen.
+    </p>
+
+    <!-- Writing video on the right -->
+    <section class="health3-side">
+        <div>
+            <p>
+                Literature also shows that emotional experiences are often complicated.
+                Mental health cannot always be described simply as happiness or sadness
+                because people can experience several emotions simultaneously. A character
+                may love someone while feeling afraid of losing them, or feel hopeful while
+                still experiencing grief. These contradictions make literary characters
+                more realistic. They remind readers that emotional experiences are rarely
+                simple and that people cannot always be understood through a single label.
+            </p>
+        </div>
+
+        <div>
+            <video class="health3-video" autoplay muted loop playsinline>
+                <source src="../movie/health3- writing.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <p>
+        Another important role of literature is encouraging empathy. When readers follow
+        the experiences of characters who are different from themselves, they are given
+        an opportunity to understand unfamiliar perspectives. Instead of immediately
+        judging a character's decisions, readers can consider the experiences that
+        influenced those decisions. This habit of understanding before judging can also
+        be applied to real life. Literature can therefore help develop emotional awareness
+        and compassion.
+    </p>
+
+    <!-- Wide footsteps video -->
+    <div class="health3-banner">    
+        <video autoplay muted loop playsinline>
+            <source src="../movie/health-3 foot steps.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <p>
+        Literary stories can additionally provide a safe space for reflection. Readers
+        may recognize parts of themselves in fictional characters, particularly when
+        stories address loneliness, grief, pressure, or uncertainty. Such recognition
+        can help readers realize that difficult emotions are not signs of personal failure.
+        At the same time, literature can encourage people to think about healthier ways
+        of responding to challenges and seeking support from others.
+    </p>
+
+    <p>
+        However, literature should not be treated as a replacement for professional
+        mental health care. Stories can encourage understanding and conversation, but
+        serious mental health concerns require appropriate support from trusted adults
+        and qualified professionals. The value of literature lies in its ability to open
+        discussions and reduce the silence surrounding emotional struggles.
+    </p>
+
+    <!-- Confusion video + conclusion -->
+    <section class="health3-confusion">
+        <div>
+            <video autoplay muted loop playsinline>
+                <source src="../movie/health3- confusion.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div>
+            <p>
+                In conclusion, literature serves as a powerful reflection of mental health
+                because it gives form to emotions that are often difficult to express.
+                Through characters, conflicts, and personal experiences, writers show the
+                complexity of human emotions and encourage readers to develop empathy.
+                By connecting literature with mental health, readers can better understand
+                both fictional characters and the people around them.
+            </p>
+            <p>
+                Most importantly, literature reminds us that behind every person's actions
+                is a human experience worth understanding.
+            </p>
+        </div>
+    </section>
+
+    <p>
+        When we talk about mental health, we always get an initial idea on where it stems
+        from. It could be related to family, relationship, and more importantly, our
+        education. The education system is greatly relevant to our mental wellness, either
+        in a negative way or the opposite. But even then, our education is important because
+        it's what builds us—what gets us ready for the future. Although it could be difficult
+        at times, it's simply something that is essential in our lives.
+    </p>
+
+    <!-- Health flower section -->
+    <section class="health3-health-card">
+        <div>
+            <video autoplay muted loop playsinline>
+                <source src="../movie/health3- windows.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div>
+            <h2>Health</h2>
+            <p>
+                Flowers can represent health because they need proper care, water, sunlight,
+                and nutrients to grow. In the same way, people need physical care, emotional
+                support, and healthy habits to live well. A blooming flower can symbolize a
+                person who is healthy, growing, and thriving.
+            </p>
+        </div>
+    </section>
+
+    <!-- Literature education section -->
+    <section class="health3-literature-card">
+        <div>
+            <img src="../static/health-3 group study.jpeg" alt="Students studying together">
+        </div>
+
+        <div>
+            <h2>
+                The Impact of Literature Education on Students’ Perceptions of Self and Others
+            </h2>
+
+            <p>
+                Literature education can help students develop self-awareness, empathy,
+                and a better understanding of other people, especially when teachers
+                encourage discussion, interaction, and students' own interpretations.
+            </p>
+
+            <p class="health3-citation">
+                • Schrijvers, M., Janssen, T., Fialho, O., & Rijlaarsdam, G. (2016).
+                The impact of literature education on students’ perceptions of self and others:
+                Exploring personal and social learning experiences in relation to teacher approach.
+                <i>L1-Educational Studies in Language and Literature, 17</i>(2), 1–37.<br>
+                <a href="https://doi.org/10.17239/L1ESLL-2016.16.04.01" target="_blank">
+                    https://doi.org/10.17239/L1ESLL-2016.16.04.01
+                </a>
+            </p>
+        </div>
+    </section>
+
+</main>
+
+</body>
+</html>

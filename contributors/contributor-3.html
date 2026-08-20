@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contributor Name | InsightHub</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+.bio { max-width:780px; margin:0 auto; padding:100px 0; }
+.bio h1 { font-size:4rem; margin:20px 0; }
+.bio p { margin:18px 0; font-size:1.05rem; }
+</style>
+</head>
+<body class="page">
+<header class="site-header"><nav class="navbar container">
+<a class="logo" href="../index.html"><span class="logo-mark">I</span><span>Insight<span>Hub</span></span></a>
+<a href="../index.html">← Home</a>
+</nav></header>
+<main class="bio container">
+<p class="section-label">THE CONTRIBUTORS</p>
+<h1>Jessica Edwardie A. Guevara</h1>
+<p><strong>Role:</strong> Writer • Researcher</p>
+<p>Jessica Edwardie A. Guevara, commonly known as Jess, is a Grade 12 STEM student with interests and hobbies similar to those of many teenagers her age. As a student, she enjoys exploring different subjects and discovering new things that help her understand both the world around her and herself.</p>
+<p>One of Jess’s main interests is reading and writing. She enjoys exploring different topics through books and other forms of literature. Among these topics, mental health and psychology greatly catch her attention. She has a strong curiosity about human emotions, and behavior, all stemming from both her experiences and what she observed from those around her. Rather than considering these subjects difficult or boring, she finds exploring them peaceful and meaningful, most especially because of the benefits and grounding feeling. Learning about the human mind allows her to understand people from different perspectives and gives her a deeper appreciation for the complexity of human experiences.</p>
+<p>Her interests still extend beyond psychology and mental health. Like many other teenagers, Jess also finds enjoyment in art and music. These creative fields give her different ways to express herself and appreciate the creativity of others. She enjoys exploring different forms of art, listening to music, and discovering new interests whenever she has the opportunity.</p>
+<p>Jess considers herself an open-minded person who is willing to explore different ideas and experiences. She does not believe that a person should be limited to one passion or interest. Instead, she sees exploration as an important part of growing and discovering one’s identity—something heavily discussed from her past subjects such as personal development.</p>
+<p>As she continues her journey through senior high school and prepares for the future, she remains curious about the different possibilities she might encounter. She hopes to continue learning and discovering more about herself along the way.</p>
+</main>
+
+<script src="../script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    document.body.classList.add("loaded");
+});
+
+document.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        const url = this.href;
+
+        // Only animate links to another page
+        if (url && !url.includes("#") && url.startsWith(window.location.origin)) {
+            e.preventDefault();
+
+            document.body.classList.remove("loaded");
+
+            setTimeout(() => {
+                window.location.href = url;
+            }, 500);
+        }
+    });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Literature, Health, and Society | InsightHub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+
+  <style>
+    /* =====================================================
+       INSIGHTHUB — HEALTH ARTICLE 2
+       Scoped so it does not alter the homepage or Health 1.
+       ===================================================== */
+
+    .health2-article {
+      width: 100%;
+      background: var(--cream, #f7f5ee);
+      color: #111;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .health2-page {
+      width: min(709px, 100%);
+      margin: 0 auto;
+      padding: 28px 28px 36px;
+      overflow: hidden;
+    }
+
+    .health2-banner {
+      width: 100%;
+      height: 150px;
+      margin: 0 0 27px;
+      overflow: hidden;
+    }
+
+    .health2-banner video {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .health2-page h1 {
+      font-family: "DM Sans", Arial, sans-serif;
+      font-size: 29px;
+      line-height: 1.15;
+      font-weight: 500;
+      margin: 0 0 22px;
+      color: #111;
+    }
+
+    .health2-page p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.45;
+      color: #111;
+      margin: 0 0 19px;
+    }
+
+    .health2-page strong {
+      font-weight: 800;
+    }
+
+    .health2-page .script {
+      font-family: "Brush Script MT", "Segoe Script", cursive;
+      font-weight: 700;
+      font-style: italic;
+    }
+
+    /* First section image on the right */
+    .health2-image-right {
+      float: right;
+      width: 335px;
+      height: 235px;
+      margin: 0 0 12px 18px;
+      overflow: hidden;
+    }
+
+    .health2-image-right video,
+    .health2-image-right img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .health2-clear::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Divider between the two parts of the article */
+    .health2-divider {
+      width: 0%;
+      height: 16px;
+      border-top: 1px solid #aaa;
+      border-bottom: 1px solid #d1d1d1;
+      background: #f1f1f1;
+    }
+
+    /* Second article section */
+
+    .health2-source {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      margin-bottom: 17px;
+    }
+
+    .health2-source-logo {
+      width: 105px;
+      height: 105px;
+      flex-shrink: 0;
+      object-fit: contain;
+    }
+
+    .health2-source-text {
+      flex: 1;
+    }
+
+    .health2-source-text h2 {
+      font-family: "DM Sans", Arial, sans-serif;
+      font-size: 21px;
+      line-height: 1.15;
+      font-weight: 500;
+      margin: 2px 0 14px;
+      color: #111;
+    }
+
+    .health2-source-text p {
+      margin-bottom: 0;
+    }
+
+    .health2-reference {
+      margin: 15px 0 0;
+      padding-left: 25px;
+    }
+
+    .health2-reference li {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.45;
+      color: #111;
+    }
+
+    .health2-reference a,
+    .health2-page a {
+      color: #06e;
+      text-decoration: underline;
+    }
+
+    .health2-flower {
+      display: block;
+      width: 245px;
+      height: 100px;
+      margin: 0 auto 15px;
+      object-fit: contain;
+    }
+
+    .health2-quotes {
+      border-top: 1px solid #aaa;
+      margin: 28px -28px 0;
+      padding: 55px 28px 0;
+      display: flex;
+      gap: 22px;
+      align-items: flex-start;
+    }
+
+    .health2-quote-list {
+      flex: 1;
+    }
+
+    .health2-quote-list blockquote {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 16px;
+      line-height: 1.35;
+      font-weight: 700;
+      margin: 0 0 9px;
+    }
+
+    .health2-quote-list p {
+      margin: 0 0 35px;
+      font-size: 15px;
+      line-height: 1.35;
+      font-weight: 700;
+    }
+
+    .health2-frankl {
+      width: 180px;
+      height: 145px;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+
+    @media (max-width: 700px) {
+      .health2-page {
+        padding: 25px 20px 35px;
+      }
+
+      .health2-banner {
+        height: 145px;
+      }
+
+      .health2-page h1 {
+        font-size: 25px;
+      }
+
+      .health2-image-right {
+        width: 42%;
+        height: 180px;
+      }
+
+      .health2-source-logo {
+        width: 78px;
+        height: 78px;
+      }
+
+      .health2-source-text h2 {
+        font-size: 17px;
+      }
+
+      .health2-quotes {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+      }
+
+      .health2-frankl {
+        width: 180px;
+        height: auto;
+        align-self: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header class="site-header"><nav class="navbar container">
+<a class="logo" href="../index.html"><span class="logo-mark">I</span><span>Insight<span>Hub</span></span></a>
+<a class="btn primary" href="../index.html">← Home</a>
+</nav></header>
+
+<main class="health2-article">
+
+  <!-- =====================================================
+       PART 1 — Literature, Health, and Society
+       ===================================================== -->
+  <section class="health2-page">
+
+    <!-- Replace health2-banner.mp4 with your actual top banner MP4 -->
+    <div class="health2-banner">
+      <video autoplay muted loop playsinline>
+        <source src="../movie/health2 choosing books.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <h1>Literature, Health, and Society</h1>
+
+    <p>
+      Health is commonly understood as the condition of the body, but true well-being
+      involves much more than physical strength. A person’s health can also be affected by
+      <strong>emotions, relationships, and access to proper care.</strong>
+      Literature reflects these different aspects of health by presenting characters who
+      experience illness, suffering, recovery, or struggles caused by their surroundings.
+      Through these stories, readers can understand that health is both a personal and
+      social issue.
+    </p>
+
+    <div class="health2-clear">
+
+      <!-- Replace health2-society.mp4 with your silhouettes asset -->
+      <div class="health2-image-right">
+        <video autoplay muted loop playsinline>
+          <source src="../movie/health2 walked past.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <p>
+        Many literary works use
+        <strong class="script">illness and physical suffering to reveal deeper truths about society.</strong>
+        A character’s illness may affect their relationships, responsibilities, identity,
+        and opportunities. In some stories, sickness becomes a symbol of larger problems
+        within a community. Poor living conditions can influence whether people are able to
+        live healthy lives. Literature therefore gives readers an opportunity to examine
+        how social conditions can affect individual well-being.
+      </p>
+
+      <p>
+        Mental health is also closely connected to these issues. A person who experiences
+        <strong>constant pressure, isolation, discrimination, or financial difficulty</strong>
+        may experience emotional distress. Literature can portray these struggles in ways
+        that statistics and medical definitions cannot always communicate. A character’s
+        thoughts, conversations, and actions allow readers to see how difficult circumstances
+        can influence someone’s emotional state. This can encourage readers to approach mental
+        health with greater compassion rather than immediately judging a person’s behavior.
+      </p>
+
+      <p>
+        Literature can also demonstrate the importance of human connection in maintaining
+        well-being. Characters often depend on family members, friends, communities, or other
+        supportive individuals during difficult situations. These relationships show that
+        people do not always have to face challenges alone. Support, understanding, and
+        communication can make difficult experiences more manageable. Through these relationships, literature emphasizes the importance of creating environments where
+      people feel safe enough to ask for help.
+    </p>
+
+    <p>
+      Another important contribution of literature is its ability to
+      <strong>raise awareness.</strong> Writers can use stories to draw attention to health
+      problems that society may ignore. By placing readers inside the experiences of
+      characters, literature can make distant issues feel personal. Readers may begin to
+      question social practices, stereotypes, or inequalities that contribute to poor health.
+      In this way, literature can encourage people to become more aware of the needs of others.
+    </p>
+
+    <p>
+      Ultimately, literature shows that health cannot be separated from the society in which
+      people live. Physical health, mental health, relationships, and living conditions are
+      connected. Stories allow readers to understand these connections through experiences
+      that feel personal and emotional. By examining health through literature, people can
+      develop greater empathy and awareness of the challenges faced by others. Literature
+      therefore becomes more than entertainment, it becomes a way of understanding human
+      suffering, resilience, and the responsibility communities have toward one another.
+    </p>
+
+    <!-- ===================================================
+         Philippine Literature and Mental Health
+         =================================================== -->
+    <div class="health2-source">
+
+      <!-- Cureus logo is already included in your website.
+           Replace this with the Philippine Literature asset
+           if you have it. -->
+      <img class="health2-source-logo"
+           src="../static/health2- mntal health logo.jpeg"
+           alt="Philippine Literature and Mental Health">
+
+      <div class="health2-source-text">
+        <h2>Philippine Literature and Mental Health</h2>
+
+        <p>
+          The article discusses how mental health has been represented in Philippine
+          Literature and how literature can help Filipinos better understand mental health.
+        </p>
+      </div>
+    </div>
+
+    <p>
+      It begins with the famous line from <i>Noli Me Tangere</i>,
+      <strong>“Crispin! Basilio! Mga anak ko!”</strong>, which is connected to Sisa’s
+      mental health struggles. The article points out that Filipino literature sometimes
+      portrays mental health conditions, but these portrayals can be misunderstood or taken
+      out of context. Because of the stigma surrounding mental health, many Filipinos may
+      also avoid seeking professional help.
+    </p>
+
+    <p>
+      The article introduces <strong>Sikolohiyang Pilipino (Filipino Psychology)</strong>,
+      associated with <strong>Virgilio Enriquez.</strong> This movement encouraged
+      psychologists to understand Filipino thoughts, emotions, and behavior within the
+      Filipino cultural context.
+    </p>
+
+    <p>
+      The article also explains that reading can benefit mental health. Literature allows
+      readers to experience other people’s perspectives, which can develop empathy. It can
+      also encourage introspection, or thinking about one’s own feelings and experiences.
+    </p>
+
+    <p>
+      To summarize: The article argues that Philippine Literature can help improve mental
+      health awareness by portraying mental health more thoughtfully, encouraging empathy
+      and self-reflection, and reducing the stigma surrounding mental illness.
+    </p>
+
+    <ul class="health2-reference">
+      <li>
+        <strong>Reyes, R., &amp; Tecson, J. C. (2022, August 20).</strong>
+        <i>Philippine literature and mental health.</i> MentalHealthPH.
+        <br>
+        <a href="https://mentalhealthph.org/08-20-22/" target="_blank">
+          https://mentalhealthph.org/08-20-22/
+        </a>
+      </li>
+    </ul>
+
+    <!-- Replace health2-flower.mp4 with the small floral decoration -->
+    <video class="health2-flower" autoplay muted loop playsinline>
+      <source src="../movie/health2-flower.mp4" type="video/mp4">
+    </video>
+
+    <!-- Quotes / Frankl image -->
+    <div class="frankl-section">
+
+    <div class="frankl-quotes">
+        <blockquote>
+            “The quest for meaning is the key to mental health and human flourishing.”
+        </blockquote>
+
+        <p class="quote-source">
+            — <a href="https://viktorfranklamerica.com/viktor-frankl-bio/">Viktor E. Frankl, Psychiatrist and Neurologist</a>
+        </p>
+
+        <blockquote>
+            “When we are no longer able to change a situation, we are challenged to change ourselves.”
+        </blockquote>
+
+        <p class="quote-source">
+            — <a href="https://antilogicalism.com/wp-content/uploads/2017/07/mans-search-for-meaning.pdf">Viktor E. Frankl, <i>Man's Search for Meaning</i></a>
+        </p>
+    </div>
+
+    <div class="frankl-photo">
+        <img src="../static/health2 viktor E frankl.jpeg" alt="Viktor E. Frankl">
+    </div>
+
+</div>
+
+
+  </section>
+
+</main>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("loaded");
+});
+</script>
+
+</body>
+</html>
+
+
